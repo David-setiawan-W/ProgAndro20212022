@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UbahDataActivity"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/menubar_def"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtNama"
+        android:padding="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nama"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtNik"
+        android:padding="10dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="NIK"/>
+
+    <Spinner
+        android:id="@+id/spnJenisKel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCariData"
+        android:padding="10dp"
+        android:layout_marginTop="40dp"
+        android:text="cari data"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUbahData"
+        android:padding="10dp"
+        android:text="ubah data"/>
+
+</LinearLayout>
